@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import Board from './components/Board';
 import reportWebVitals from './reportWebVitals';
+//import Collections from './components/Collections';
 
 ReactDOM.render(
   <Board/>,

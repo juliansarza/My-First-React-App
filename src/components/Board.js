@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/Board.css';
 //import Note from '..css/Note.css';
 import Note from './Note';
+import Collections from './Collections';
 
 class Board extends Component {
     constructor() {
@@ -13,13 +14,14 @@ class Board extends Component {
             <div>
                 <div className="div-board">
                     <div className="row">
-                        <Note title="My Firt Book" body="Hungry Caterpillar" />
+                        <Note title="Title" body="Body" />
                         <Note title="My First Vacation" body="Costa Rica" />
                         <Note title="My First Movie" body="Lion King" />
+                        <Collections />
                     </div>
                 </div>
                 <div>
-                    <button className="btn btn-success add-button">Add</button>
+                    <button className="btn-success">Add</button>
                 </div>
             </div>
         )

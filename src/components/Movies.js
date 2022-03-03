@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import React, { Component } from 'react';
-import '../css/Note.css';
+import '../css/Movies.css';
 import PropTypes from 'prop-types';
 
-class Note extends Component {
+class Movies extends Component {
     constructor() {
         super();
     }
@@ -14,10 +14,11 @@ class Note extends Component {
                 <div className="card card-view">
                     <div className="card-body">
                         <h5 className="card-title"> {this.props.title} </h5>
-                        <p> {this.props.author} </p>
-                        <p> {this.props.body} </p>
-                        <button className="btn btn-info">Edit</button>
-                        <button className="btn btn-danger">Delete</button>
+                        <p> {this.props.description} </p>
+                        <p> {this.props.year} </p>
+                        <p> {this.props.genre} </p>
+                        <button className="btn-info">Edit</button>
+                        <button className="btn-danger">Delete</button>
                     </div>
                 </div>
             </div>
@@ -25,13 +26,13 @@ class Note extends Component {
     }
 }
 
-Note.defaultProps = {
+Movies.defaultProps = {
     title: "A cool title",
-    body: "A cool body",
+    genre: "A cool genre",
   };
    
-  Note.propTypes = {
+  Movies.propTypes = {
     title: PropTypes.string
   };
 
-  export default Note;
+  export default Movies;
